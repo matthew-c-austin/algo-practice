@@ -1,5 +1,5 @@
 {
-  "name": "javascript",
+  "name": "chai",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,9 +9,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "chai": "^4.3.6",
-    "mocha": "^10.0.0",
-    "save-dev": "^0.0.1-security"
+    "mocha": "^10.0.0"
   }
 }
