@@ -15,10 +15,15 @@ targetSum = 10
 Sample Outputs
 [-1, 11] // the numbers can be in reverse order */
 
+/* Solution
+Using a hash table, search in constant time for a potential match to the current 
+array index. If the potential match is not in the hash table, add the current value 
+of the array to the hast table 
+
+O(n) time | O(n) space - where n is the length of the array */
+
 function twoNumberSum(array, targetSum) {
-    /* Using a hash table, search in constant time for a potential match to the current 
-    array index. If the potential match is not in the hash table, add the current value 
-    of the array to the hash table */
+
     const nums = {};
     for (const num of array) {
         const potentialMatch = targetSum - num;
