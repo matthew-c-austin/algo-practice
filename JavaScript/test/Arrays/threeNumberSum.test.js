@@ -3,15 +3,9 @@ const expect = require('chai').expect;
 
 // Case #1: from sample
 it('Test Case #1', function () {
-    const array = [12, 3, 1, 2, -6, 5, -8, 6];
-    const targetSum = 0;
-    const expected = [
-        [-8, 2, 6],
-        [-8, 3, 5],
-        [-6, 1, 5],
-        ];
+    const coins = [5, 7, 1, 1, 2, 3, 22];
+    const expected = 20;
     expect(program.threeNumberSumSolution1(array, targetSum)).to.deep.equal(expected);
-    expect(program.threeNumberSumSolution2(array, targetSum)).to.deep.equal(expected);
 });
 
 // Case #2: one triplet as input and output 

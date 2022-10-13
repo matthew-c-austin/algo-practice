@@ -34,7 +34,9 @@ Sample Output
 "Python" */
 
 /* Solution
-
+Using a hash table, continually increment score for each game in the competitions.
+Keep track of the current best team, initialized to "" and 0 in the hash table,
+and update with a conditional after each game.
 
 O(n) time | O(k) space, where n is the number of games, and k is number of teams*/
 
