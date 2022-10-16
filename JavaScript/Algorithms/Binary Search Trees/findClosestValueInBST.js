@@ -49,7 +49,6 @@ function findClosestValueInBst(tree, target) {
 }
 
 // This is the class of the input tree.
-// eslint-disable-next-line no-unused-vars
 class BST {
   constructor(value) {
     this.value = value;
