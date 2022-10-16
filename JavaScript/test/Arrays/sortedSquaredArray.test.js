@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const program = require('../../Algorithms/Arrays/sortedSquaredArray');
 const expect = require('chai').expect;
 

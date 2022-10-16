@@ -41,32 +41,32 @@ and update with a conditional after each game.
 O(n) time | O(k) space, where n is the number of games, and k is number of teams*/
 
 function tournamentWinner(competitions, results) {
-    const HOME_TEAM_WINS = 1;
-    let currentBestTeam = "";
-    let scores = {[currentBestTeam] : 0};
+  const HOME_TEAM_WINS = 1;
+  let currentBestTeam = '';
+  let scores = {[currentBestTeam] : 0};
 
-    for (let i = 0; i < competitions.length; i++) {
-        let result = results[i];
-        let [homeTeam, awayTeam] = competitions[i];
+  for (let i = 0; i < competitions.length; i++) {
+    let result = results[i];
+    let [homeTeam, awayTeam] = competitions[i];
 
-        const winner = result === HOME_TEAM_WINS ? homeTeam : awayTeam;
+    const winner = result === HOME_TEAM_WINS ? homeTeam : awayTeam;
 
-        updateScores(winner, scores, 3);
+    updateScores(winner, scores, 3);
 
-        if (scores[winner] > scores[currentBestTeam]) {
-            currentBestTeam = winner;
-        }
+    if (scores[winner] > scores[currentBestTeam]) {
+      currentBestTeam = winner;
     }
+  }
 
-    return currentBestTeam;
+  return currentBestTeam;
 }
 
 function updateScores(team, scores, points) {
-    if (!(team in scores)) {
-        scores[team] = 0;
-    }
+  if (!(team in scores)) {
+    scores[team] = 0;
+  }
 
-    scores[team] += points;
+  scores[team] += points;
 }
 
 exports.tournamentWinner = tournamentWinner;

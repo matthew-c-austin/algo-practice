@@ -24,16 +24,16 @@ O(n) time | O(n) space - where n is the length of the array */
 
 function twoNumberSum(array, targetSum) {
 
-    const nums = {};
-    for (const num of array) {
-        const potentialMatch = targetSum - num;
-        if (potentialMatch in nums) {
-            return [potentialMatch, num];
-        } else {
-            nums[num] = true;
-        }
+  const nums = {};
+  for (const num of array) {
+    const potentialMatch = targetSum - num;
+    if (potentialMatch in nums) {
+      return [potentialMatch, num];
+    } else {
+      nums[num] = true;
     }
-    return [];
+  }
+  return [];
 }
 
 exports.twoNumberSum = twoNumberSum;

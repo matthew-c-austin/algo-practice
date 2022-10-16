@@ -26,14 +26,14 @@ is not satisfied, and the chain cannot continue.
 
 O(nlogn) time | O(1) space */
 function nonConstructibleChange(coins) {
-    let currentSum = 0;
-    coins.sort((a, b) => a - b);
-    for (const coin of coins) {
-        if (coin > currentSum + 1) return currentSum + 1;
+  let currentSum = 0;
+  coins.sort((a, b) => a - b);
+  for (const coin of coins) {
+    if (coin > currentSum + 1) return currentSum + 1;
 
-        currentSum += coin;
-    }
-    return currentSum + 1;
-}   
+    currentSum += coin;
+  }
+  return currentSum + 1;
+}
 
 exports.nonConstructibleChange = nonConstructibleChange;

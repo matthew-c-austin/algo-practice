@@ -37,18 +37,19 @@ function findClosestValueInBst(tree, target) {
   let closestValue = tree.value;
   while (currentNode !== null) {
     if (Math.abs(target - closestValue) > Math.abs(target - currentNode.value)) {
-        closestValue = currentNode.value;
+      closestValue = currentNode.value;
     }
     if (target < currentNode.value) {
-        currentNode = currentNode.left;
+      currentNode = currentNode.left;
     } else if (target > currentNode.value) {
-        currentNode = currentNode.right;
+      currentNode = currentNode.right;
     } else break;
   }
   return closestValue;
 }
 
 // This is the class of the input tree.
+// eslint-disable-next-line no-unused-vars
 class BST {
   constructor(value) {
     this.value = value;

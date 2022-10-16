@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const program = require('../../Algorithms/Binary Search Trees/findClosestValueInBST');
 const expect = require('chai').expect;
 
@@ -42,7 +43,7 @@ it('Test Case #2', function () {
   expect(actual).to.deep.equal(expected);
 });
 
-// Case #2 look for -1
+// Case #3 look for -1
 it('Test Case #3', function () {
   const root = new BST(10);
   root.left = new BST(5);

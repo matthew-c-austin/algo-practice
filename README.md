@@ -1,6 +1,6 @@
 # algo-practice
 
-Algorithm practice structured by language and the following algorithm categories:
+Algorithm practice with AlgoExpert structured by language and the following algorithm categories:
 
 - Arrays
 - Binary Search Trees
