@@ -1,4 +1,4 @@
-# Strings - Caesar Cipher Encryption
+# Strings - Run Length Encoding
 
 ## Features
 
